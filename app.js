@@ -75,9 +75,9 @@ app.post('/api', (req, res) => {
 // await new Promise(r => setTimeout(r, 3600000))
 // heroku.delete('/apps/whatsapp-node-server/dynos')
 
-process.on('unhandledRejection', err => {
-	// Handle the error safely
-	console.log('oh my god')
-})
+// process.on('unhandledRejection', err => {
+// 	// Handle the error safely
+// 	console.log('oh my god')
+// })
 
 
