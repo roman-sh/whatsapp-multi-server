@@ -1,8 +1,6 @@
+const express = require('express')
 const qrcode = require('qrcode-terminal')
 const { Client, MessageMedia } = require('whatsapp-web.js')
-const express = require('express')
-const cron = require('node-cron')
-const axios = require('axios')
 
 
 const client = new Client({ puppeteer: { headless: false }, clientId: 'kitech' })
