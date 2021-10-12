@@ -3,7 +3,12 @@ const qrcode = require('qrcode-terminal')
 const { Client, MessageMedia } = require('whatsapp-web.js')
 
 
-const client = new Client({ puppeteer: { headless: false }, clientId: 'kitech' })
+const client = new Client({ puppeteer: {
+	headless: false,
+	args: [
+		'--no-sandbox',
+	]
+}, clientId: 'kitech' })
 client.initialize()
 
 client.on('qr', qr => {
