@@ -1,7 +1,14 @@
 const express = require('express')
 const qrcode = require('qrcode-terminal')
+const fs = require('fs')
 const { Client, MessageMedia } = require('whatsapp-web.js')
 
+
+const SESSION_FILE_PATH = './session.json'
+let sessionCfg
+if (fs.existsSync(SESSION_FILE_PATH)) {
+	sessionCfg = require(SESSION_FILE_PATH)
+}
 
 const client = new Client({ puppeteer: {
 	headless: true,
@@ -10,7 +17,8 @@ const client = new Client({ puppeteer: {
 		'--disable-setuid-sandbox',
 		'--unhandled-rejections=strict'
 	  ]
-}, clientId: 'kitech' })
+}, session: sessionCfg })
+
 client.initialize()
 
 client.on('qr', qr => {
@@ -60,8 +68,8 @@ app.listen(port, () => {
 
 ////////////////////////////////////////////////////////////////
 
-// const chatId = process.env.PHONE.replace('+', '') + '@c.us'
-const chatId = '972546313551' + '@c.us'
+const phone = process.env.PHONE || '+972546313551'
+const chatId = phone.replace('+', '') + '@c.us'
 
 app.post('/api', (req, res) => {
 	const { message, image } = req.body
