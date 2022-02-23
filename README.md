@@ -28,5 +28,4 @@ How to install on digitalocean droplet:
   
 
 Connect a new phone:  
-        delete WWebJS directory:  
-        `rm -rf WWebJS/`
+    `rm -rf WWebJS/` (delete WWebJS directory)  
