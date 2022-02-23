@@ -1,6 +1,6 @@
 # whatsapp-multi-server
 
-How to install on digitalocean droplet:
+## How to install on digitalocean droplet:
 
 1. Install nodeJS:  
     Install nvm (node version manager):  
