@@ -28,7 +28,5 @@
   
 
 ## Connect a new phone:  
-
     Delete WWebJS directory:  
-    
     `rm -rf WWebJS/` 
