@@ -14,7 +14,7 @@ How to install on digitalocean droplet:
   `git clone https://github.com/roman-sh/whatsapp-multi-server.git`
   
 3. Install:  
-  `cd whatsapp-multi-server`
+  `cd whatsapp-multi-server`  
   `npm i`
   
 4. Add missing library for pupperteer:  
