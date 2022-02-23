@@ -25,7 +25,7 @@
   
 6. Run app:  
   `pm2 start ./server.js`  
-  
+  `pm2 logs 0`  
 
 ## Connect a new phone:  
     Delete WWebJS directory:  
