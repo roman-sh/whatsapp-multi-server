@@ -23,6 +23,6 @@ How to install on digitalocean droplet:
 5. Install pm2:  
   `npm i -g pm2`  
   
-6. Run app:
+6. Run app:  
   `pm2 start ./server.js`  
   
