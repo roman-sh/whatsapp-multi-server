@@ -17,7 +17,7 @@ How to install on digitalocean droplet:
   `cd whatsapp-multi-server`  
   `npm i`
   
-4. Add missing library for pupperteer:  
+4. Add missing library for puppeteer:  
   `sudo apt-get install -y libgbm-dev`
   
 5. Install pm2:  
