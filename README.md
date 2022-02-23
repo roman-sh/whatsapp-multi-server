@@ -4,7 +4,7 @@ How to install on digitalocean droplet:
 
 1. Install nodeJS:  
     Install nvm (node version manager):  
-    `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash`
+    `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash`  
     `source ~/.bashrc`
     
     Install node:  
