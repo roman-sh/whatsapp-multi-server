@@ -20,6 +20,9 @@ How to install on digitalocean droplet:
 4. Add missing library for pupperteer:  
   `sudo apt-get install -y libgbm-dev`
   
-5. Run:  
-  `node server.js`
+5. Install pm2:  
+  `npm i -g pm2`  
+  
+6. Run app:
+  `pm2 start ./server.js`  
   
