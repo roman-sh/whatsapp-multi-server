@@ -28,5 +28,5 @@
   `pm2 logs 0`  
 
 ## Connect a new phone:  
-    Delete WWebJS directory:  
-    `rm -rf WWebJS/` 
+Delete WWebJS directory:  
+`rm -rf WWebJS/` 
