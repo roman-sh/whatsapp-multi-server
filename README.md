@@ -26,3 +26,7 @@ How to install on digitalocean droplet:
 6. Run app:  
   `pm2 start ./server.js`  
   
+
+Connect a new phone:  
+    delete WWebJS directory:  
+    `rm -rf WWebJS/`
