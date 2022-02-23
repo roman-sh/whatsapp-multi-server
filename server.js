@@ -2,6 +2,7 @@ const express = require('express')
 const qrcode = require('qrcode-terminal')
 const fs = require('fs')
 const { Client, MessageMedia } = require('whatsapp-web.js')
+const { PHONE } = require('./config')
 
 
 const SESSION_FILE_PATH = './session.json'
@@ -68,8 +69,7 @@ app.listen(port, () => {
 
 ////////////////////////////////////////////////////////////////
 
-const phone = process.env.PHONE || '+972546313551'
-const chatId = phone.replace('+', '') + '@c.us'
+const chatId = PHONE.replace('+', '') + '@c.us'
 
 app.post('/api', (req, res) => {
 	const { message, image } = req.body
