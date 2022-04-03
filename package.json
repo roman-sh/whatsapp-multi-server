@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "github:pedroslopez/whatsapp-web.js#multidevice"
+    "whatsapp-web.js": "latest"
   },
   "engines": {
     "node": "^16.14.0"
